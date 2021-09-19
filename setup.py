@@ -1,14 +1,17 @@
-from setuptools import setup
+import os
 
-# read the contents of your README file
+from setuptools import setup
 from os import path
+
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
+requirements = open('zeuscord/requirements.txt', encoding="utf-8").read()
+
 setup(
     name='zeuscord',
-    version='0.1.0',    
+    version='0.1.1',    
     long_description=long_description,
     long_description_content_type='text/markdown',
     description='ZeusCord speeds up Discord bot developement a lot by providing tons of useful features and commands.',
@@ -17,11 +20,12 @@ setup(
     author_email='neostyxde@gmail.com',
     license='MIT',
     packages=['zeuscord'],
-    install_requires=['discord.py>=1.0',
-                      'PyNaCl',
-                      'python-dotenv',              
-                      ],
-
+    entry_points = {
+        'console_scripts': [
+            'zeuscord=zeuscord.cli:run'
+        ],
+    },
+    install_requires=[requirements.split('\n')],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
