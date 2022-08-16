@@ -1,11 +1,14 @@
+### ⚠️ Announcement [Aug '22]
+- I decided not to support a centralized, closed source social media platform, and thus further developement for this project is unlikely, at least as of right now.
+
+### ⚠️ Announcement [May '22]
+- discord.py is maintained again :tada:
+- I don't know if I'll update this project, though
+
 ### ⚠️ Announcement [Dec '21]
 - This project COULD be revived, as I started working on [NOVΛLIX](https://github.com/nsde/novalix) again.
 - I don't know if I even want to do so, becuase **JavaScript is probably much better** for Discord bots and **I started disliking Discord** because of their **marketing** and the fact that they aren't and **wont be open open source** as said in a FAQ or something idk
 - I put this in my archive because discord.py died back then, so I lost all my motivation to work on Discord bots at all.
-
-### ⚠️ Update [May '22]
-- discord.py is maintained again :tada:
-- I don't know if I'll update this project, though
 
 ***
 
